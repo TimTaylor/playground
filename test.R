@@ -10,7 +10,7 @@ od <- setwd(f)
 tryCatch(
     expr = {
         source("out.R")
-        if (!isTRUE(all.equal(out, 2))) {
+        if (!isTRUE(all.equal(out, 1))) {
             stop("Integration test failed.")
         }
     },

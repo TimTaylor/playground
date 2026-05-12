@@ -10,7 +10,7 @@ name: test
 permissions: read-all
 
 jobs:
-  pkgdown:
+  testit:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
