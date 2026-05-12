@@ -18,8 +18,7 @@ jobs:
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
           extra-packages: github::katehayes/dQALY@89cea44e3673f06426b7a38784f421f55dcb71ac
-          use-public-rspm: true
 
       - name: meh
-        run: install.packages('pipeline', repos = c('https://timtaylor.r-universe.dev/linux/noble-x86_64/4.6', 'https://cloud.r-project.org'));source('test.R')
+        run: install.packages('pipeline', repos = c('https://timtaylor.r-universe.dev/bin/linux/noble-x86_64/4.6', 'https://cloud.r-project.org'));source('test.R')
         shell: Rscript {0}
